@@ -25,10 +25,6 @@ import Comparison from './src/components/Sprints/PreCourse/PreWeek1/SubSprints/C
 import Variables from './src/components/Sprints/PreCourse/PreWeek1/SubSprints/Variables';
 import WhileLoop from './src/components/Sprints/PreCourse/PreWeek1/SubSprints/WhileLoop';
 import ArraysAndForLoop from './src/components/Sprints/PreCourse/PreWeek1/SubSprints/ArraysAndForLoop';
-<<<<<<< HEAD
-
-=======
->>>>>>> 742ab1237aa1999613c827362271dcdc4031d36d
 // PC Week 2 Sprints
 import Objects from './src/components/Sprints/PreCourse/PreWeek2/SubSprints/Objects'; 
 import DataModeling from './src/components/Sprints/PreCourse/PreWeek2/SubSprints/DataModeling';
