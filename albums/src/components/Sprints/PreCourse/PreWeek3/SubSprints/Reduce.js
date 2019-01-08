@@ -37,7 +37,6 @@ export default class Reduce extends Component {
 
         <ReduceExample />
 
-        {/* <ReduceExampleExplanation /> */}
         <CardSection  >
           <Text style={Styles.boldText}>
             Let's see what happened step by step:

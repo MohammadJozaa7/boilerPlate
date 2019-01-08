@@ -1,73 +1,74 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button, Card, CardSection, Playquiz } from '../../../../common';
+import { Image } from 'react-native';
+import ReduceSyntax from '../SubSubSprints/reduceSyntax';
+import ReduceSyntaxExplanation from '../SubSubSprints/reduceSyntaxExplanation';
+import ReduceExample from '../SubSubSprints/reduceExample';
 
-class OOP extends Component {
-
+export default class OOP extends Component {
   render() {
-    const { thumbnailStyle, headerConetentStyle, thumbnailContainerStyle, headerTextStyle, boldText } = Styles;
     const topic = 'OOP';
     const introduction = '';
-    const body = [
-      [
-        'The same but we make the function outside and to reach the object we use word "this"', 
-        'function oop(initial) {\n\
-          var S = {}\n\
-          S.balance = initial;\n\
-          S.withdraw = withdraw1;\n\
-          S.show = show1;\n\
-          return S\n\
-          }\n\
-          var show1 = function () {\n\
-          console.log("this here is: ", this)\n\
-          return "Balance: " + this.balance;\n\
-          }\n\
-          var withdraw1 = function (amount) {\n\
-          if (this.balance - amount >= 0) {\n\
-          this.balance = this.balance - amount;\n\
-          return "Withdraw: " + amount + " Balance: " + this.balance;\n\
-          }\n\
-          return "Insufficient funds.";\n\
-          }'
-      ],
-    ]
-
     return (
-      
       <Card>
         <CardSection>
-          <View style = {headerConetentStyle}>
-            <Text style = {headerTextStyle}>
+          <View style={Styles.headerConetentStyle}>
+            <Text style={Styles.headerTextStyle}>
               {topic}
             </Text>
-          </View>				
+          </View>
+        </CardSection>
+        <CardSection style={{ flexDirection: 'row' }}>
+          <Image
+            style={{ height: 100, width: 350 }}
+            source={require('../assets/reduce.png')} />
         </CardSection>
 
         <CardSection>
-          <Text>
-          {introduction}{"\n"}
+          <Text style={Styles.text}>
+            {introduction}
           </Text>
         </CardSection>
 
-        <CardSection>
-          <Text style={ boldText }>
-            {body[0][0]}
-          </Text>
-        </CardSection>
-        <CardSection>
-          <Text>
-            {body[0][1]}
+        <ReduceSyntax />
+
+        <ReduceSyntaxExplanation />
+
+        <ReduceExample />
+
+        <CardSection  >
+          <Text style={Styles.boldText}>
+            Let's see what happened step by step:
           </Text>
         </CardSection>
 
-        <CardSection>
-          <Button onPress = {()=>this.props.navigation.navigate('Closures And Adding Methods')}>
-            Previous
-          </Button>
+        <CardSection >
+          <Image
+            style={{ width: 340, height: 125 }}
+            source={require('../assets/reduceWithIV.png')} />
         </CardSection>
+
+        <CardSection  >
+          <Text style={Styles.boldText}>
+
+          </Text>
+        </CardSection>
+
+        <CardSection >
+          <Image
+            style={{ width: 340, height: 99 }}
+            source={require('../assets/reduceWithoutIV.png')} />
+        </CardSection>
+
         <CardSection>
           <Button onPress = {()=>this.props.navigation.navigate('HTML, CSS and jQuery')}>
             Next
+          </Button>
+        </CardSection>
+        <CardSection>
+          <Button onPress = {()=>this.props.navigation.navigate('Closures And Adding Methods')}>
+            Previous
           </Button>
         </CardSection>
         <CardSection>
@@ -83,10 +84,12 @@ class OOP extends Component {
 const Styles = StyleSheet.create({
   headerConetentStyle: {
     flexDirection: 'column',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
   },
   headerTextStyle: {
-    fontSize: 30
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: 'black',
   },
   thumbnailStyle: {
     height: 46,
@@ -99,7 +102,36 @@ const Styles = StyleSheet.create({
     marginRight: 20
   },
   boldText: {
-    fontWeight: 'bold'
-  }
+    fontWeight: 'bold',
+    color: 'black'
+  },
+  boldHeader: {
+    fontWeight: 'bold',
+    color: 'black',
+    fontSize: 17,
+  },
+  text: {
+    color: 'black'
+  },
+  array: {
+    color: 'red',
+  },
+  reduce: {
+    color: 'blue',
+  },
+  cb: {
+    color: 'green',
+  },
+  acc: {
+    color: '#9932CC',
+  },
+  elem: {
+    color: '#FF8C00',
+  },
+  i: {
+    color: 'red',
+  },
+  iv: {
+    color: '#FF00FF',
+  },
 });
-export default OOP;
