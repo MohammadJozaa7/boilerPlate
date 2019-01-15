@@ -6,42 +6,43 @@ import ReduceSyntax from './reduceSyntax';
 
 export default class ReduceExample extends Component {
   render() {
+    const { boldHeader, text, array, reduce, cb, acc, elem, i, iv } = Styles
     return (
       <CardSection>
-        <Text style={Styles.boldHeader}>
+        <Text style={boldHeader}>
           Example:{' '}{'\n'}
-          <Text style={Styles.array}>
+          <Text style={array}>
             [1,5,6]
             </Text>
           .
-            <Text style={Styles.reduce}>
+            <Text style={reduce}>
             reduce
             </Text>
           ({'\n'}
-          <Text style={Styles.cb}>
+          <Text style={cb}>
             {' '}{' '}function
             </Text>
           (
-            <Text style={Styles.acc}>
+            <Text style={acc}>
             acc
             </Text>
           ,
-            <Text style={Styles.elem}>
+            <Text style={elem}>
             elem
             </Text>
           ,
-            <Text style={Styles.i}>
+            <Text style={i}>
             i
             </Text>
           ){'{'}{'\n'}
-          <Text style={Styles.array}>
+          <Text style={array}>
             {' '}{' '}{' '}{' '}return{' '}
           </Text>
-          <Text style={Styles.cb}>
+          <Text style={cb}>
             acc+elem{'\n'}
           </Text>
           {' '}{' '}},{'\n'}
-          <Text style={Styles.iv}>
+          <Text style={iv}>
             0
             </Text>
           )

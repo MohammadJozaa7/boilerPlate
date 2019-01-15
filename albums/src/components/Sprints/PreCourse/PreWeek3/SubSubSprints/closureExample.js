@@ -15,77 +15,77 @@ export default class ClosureExample extends Component {
           </Text>
           <Text style={func}>
             function closure(
-                <Text style={Styles.balance}>
+                <Text style={balance}>
               initial
                 </Text>
             ){'{'}{'\n'}
             {' '}{' '}var
-              <Text style={Styles.balance}>
+              <Text style={balance}>
               {' '}balance
               </Text>
             {' '}=
-              <Text style={Styles.balance}>
+              <Text style={balance}>
               {' '}initial
               </Text>
             ;{'\n'}
-            < Text style={Styles.closure}>
+            < Text style={closure}>
               {' '}{' '}function
-                <Text style={Styles.withdraw}>
+                <Text style={withdraw}>
                 {' '}withdraw
               </Text>
               (
-              <Text style={Styles.amount}>
+              <Text style={amount}>
                 amount
               </Text>
               ){'{'}{'\n'}
               {' '}{' '}{' '}{' '}if(
-                  <Text style={Styles.balance}>
+                  <Text style={balance}>
                 balance
               </Text>
               {' '}-
-              <Text style={Styles.amount}>
+              <Text style={amount}>
                 {' '}amount
               </Text>
               {' '}>=
-                <Text style={Styles.text}>
+                <Text style={text}>
                 {' '}0
                 </Text>
               ){'{'}{'\n'}
-              <Text style={Styles.balance}>
+              <Text style={balance}>
                 {' '}{' '}{' '}{' '}{' '}{' '}balance
               </Text>
               {' '}=
-              <Text style={Styles.balance}>
+              <Text style={balance}>
                 {' '}balance
               </Text>
               {' '}-
-              <Text style={Styles.amount}>
+              <Text style={amount}>
                 {' '}amount
               </Text>
               ;{'\n'}
               {' '}{' '}{' '}{' '}{' '}{' '}return ‘
-                <Text style={Styles.text}>
+                <Text style={text}>
                 Success to withdraw:{' '}
                 </Text>
               ‘ +
-                <Text style={Styles.amount}>
+                <Text style={amount}>
                 {' '}amount
                 </Text>
               ;{'\n'}
               {' '}{' '}{' '}{' '}{'}'}{'\n'}
               {' '}{' '}{' '}{' '}return ‘
-                <Text style={Styles.text}>
+                <Text style={text}>
                 Failed to withdraw:{' '}
                 </Text>
               ‘ +
-                <Text style={Styles.amount}>
+                <Text style={amount}>
                 {' '}amount
               </Text>
               ;{'\n'}
               {' '}{' '}{'}'}{'\n'}
             </Text>
             {' '}{' '}return
-              <Text style={Styles.withdraw}>
+              <Text style={withdraw}>
               {' '}withdraw
               </Text>
             ;{'\n'}{'}'}

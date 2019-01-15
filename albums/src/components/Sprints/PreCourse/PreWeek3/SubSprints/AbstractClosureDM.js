@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button, Card, CardSection, Playquiz } from '../../../../common';
 import { Image } from 'react-native';
-import ClosureExample from '../SubSubSprints/closureExample';
-import ClosureExampleExplanation from '../SubSubSprints/closureExampleExplanation';
 import AddingMethodsExample from '../SubSubSprints/addingMethodsExample';
 import AddingMethodsExampleExplanation from '../SubSubSprints/addingMethodsExampleExplanation';
+import ClosureExample from '../SubSubSprints/closureExample';
+import ClosureExampleExplanation from '../SubSubSprints/closureExampleExplanation';
 
 export default class AbstractClosureDM extends Component {
   render() {
@@ -43,9 +43,9 @@ export default class AbstractClosureDM extends Component {
         <ClosureExampleExplanation />
 
         {/* Adding Methods */}
-        <AddingMethodsExample/>
+        <AddingMethodsExample />
 
-        <AddingMethodsExampleExplanation/>
+        <AddingMethodsExampleExplanation />
         <CardSection>
           <Button onPress={() => this.props.navigation.navigate('Reduce')}>
             Previous

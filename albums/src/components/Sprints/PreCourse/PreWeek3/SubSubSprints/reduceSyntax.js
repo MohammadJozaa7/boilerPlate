@@ -5,35 +5,36 @@ import { Image } from 'react-native';
 
 export default class ReduceSyntax extends Component {
   render() {
+    const { boldHeader, text, array, reduce, cb, acc, elem, i, iv } = Styles
     return (
       <CardSection>
-        <Text style={Styles.boldHeader} >
+        <Text style={boldHeader} >
           Syntax:{' '}
-        <Text style={Styles.array}>
+          <Text style={array}>
             array
         </Text>
           .
-        <Text style={Styles.reduce}>
+        <Text style={reduce}>
             reduce
         </Text>
           (
-        <Text style={Styles.cb}>
+        <Text style={cb}>
             cb
         </Text>
           (
-        <Text style={Styles.acc}>
+        <Text style={acc}>
             acc
         </Text>
           ,
-        <Text style={Styles.elem}>
+        <Text style={elem}>
             elem
         </Text>
           ,
-        <Text style={Styles.i}>
+        <Text style={i}>
             i
         </Text>
           ),
-        <Text style={Styles.iv}>
+        <Text style={iv}>
             iv
         </Text>
           )
